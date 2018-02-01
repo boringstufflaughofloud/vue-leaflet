@@ -1,6 +1,6 @@
 <template lang="pug">
   div(id="side-bar")
-    h1 {{message}}
+    h1 TEST
 </template>
 
 <script>
