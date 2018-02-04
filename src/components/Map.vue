@@ -1,22 +1,17 @@
 <template lang="pug">
-  div(id="map")
-    h1 {{message}}
+  main
 </template>
 
 <script>
   export default {
     name: "Map",
-    data(){
-      return {
-        message: "tesdwst"
-      }
-    }
+
   }
 </script>
 
 <style lang="scss">
-  #map {
-    width: 250px;
+  main {
+    width: 100%;
     height: 100%;
     background-color: #ff98f1;
   }
