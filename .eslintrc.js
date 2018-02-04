@@ -22,7 +22,7 @@ module.exports = {
   // add your custom rules here
   rules: {
 
-    "quotes": ["error", "double"],
+    // "quotes": ["error", "double"],
     // "semi": ["error", "always"],
     // allow async-await
     // 'generator-star-spacing': 'off',

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!--<NavigationBar/>-->
+    <NavigationBar/>
     <SideBar/>
     <Map/>
   </div>
@@ -14,7 +14,7 @@
   export default {
     name: 'App',
     components: {
-//      NavigationBar,
+      NavigationBar,
       SideBar,
       Map
     }
