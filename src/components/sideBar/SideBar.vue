@@ -1,9 +1,10 @@
 <template lang="pug">
-  aside(v-show="componentVisibility" transition="slide")
+  transition(name="slide")
+    aside(v-show="componentVisibility")
 </template>
 
 <script>
-  import store from "../store/UIStore"
+  import store from "../../store/UIStore"
 
   export default {
     name: "SideBar",
@@ -19,12 +20,12 @@
 <style lang="scss">
   aside {
     background-color: #fff;
-    width: 250px;
-    position: fixed;
-    top: 55px;
+    width: 400px;
+    /*position: fixed;*/
+    /*top: 55px;*/
     left: 0;
     bottom: 0px;
-    z-index: 1;
+    /*z-index: 1;*/
     display: flex;
     justify-content: center;
     align-items: center;
