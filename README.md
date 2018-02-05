@@ -1,6 +1,6 @@
-# test-vue-project
+# leaflet-vue-project
 
-> project for testing
+> project for showing objects into mapview
 
 ## Build Setup
 
