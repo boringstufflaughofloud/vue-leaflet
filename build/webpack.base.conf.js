@@ -39,6 +39,10 @@ module.exports = {
     }
   },
   module: {
+
+    loaders: [
+      { test: /\.css$/, loader: "css-loader" }
+    ],
     rules: [
       ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
