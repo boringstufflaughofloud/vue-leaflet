@@ -23,7 +23,6 @@
 
 <style>
   @import "styles/app.scss";
-  @import "leaflet/dist/leaflet.css";
 
   .content{
     display: flex;
