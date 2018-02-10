@@ -14,7 +14,7 @@ export default class SymbolGenerator {
 
     static createSymbol(appCode = "sfgpewrh--mt"){
       return new ms.Symbol("sfgpewrh--mt", {
-        size: 35,
+        size: 25,
         quantity: 200,
         staffComments: "for reinforcements".toUpperCase(),
         additionalInformation: "added support for JJ".toUpperCase(),

@@ -4,14 +4,13 @@
 </template>
 
 <script>
-  import store from "../../store/UIStore"
 
   export default {
     name: "SideBar",
 
     computed: {
       componentVisibility () {
-        return store.state.sidebarVisibility
+        return this.$store.state.sidebarVisibility
       }
     },
   }

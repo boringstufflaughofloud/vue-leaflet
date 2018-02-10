@@ -11,10 +11,10 @@ const UIStore = new Vuex.Store({
     sidebarVisibility: false
   },
   mutations: {
-    toogleSidebar (state) {
+    toogleSidebar: (state) => {
       state.sidebarVisibility = !state.sidebarVisibility
     }
   }
-})
+});
 
 export default UIStore
