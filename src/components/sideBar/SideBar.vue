@@ -10,7 +10,7 @@
 
     computed: {
       componentVisibility () {
-        return this.$store.state.sidebarVisibility
+        return this.$store.state.uiStore.sidebarVisibility
       }
     },
   }
@@ -20,11 +20,8 @@
   aside {
     background-color: #fff;
     width: 400px;
-    /*position: fixed;*/
-    /*top: 55px;*/
     left: 0;
     bottom: 0px;
-    /*z-index: 1;*/
     display: flex;
     justify-content: center;
     align-items: center;

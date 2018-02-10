@@ -3,18 +3,16 @@
 /// /////////////////////////////////////////////////////////////
 import Vue from 'vue'
 import Vuex from 'vuex'
+import UIStore from './modules/UIStore'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-const UIStore = new Vuex.Store({
-  state: {
-    sidebarVisibility: false
-  },
-  mutations: {
-    toogleSidebar: (state) => {
-      state.sidebarVisibility = !state.sidebarVisibility
-    }
+const Store = new Vuex.Store({
+
+  modules:{
+    uiStore: UIStore
   }
+
 });
 
-export default UIStore
+export default Store
