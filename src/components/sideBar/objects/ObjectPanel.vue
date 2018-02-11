@@ -3,10 +3,16 @@
 
     p Select Coding Scheme
     b-dropdown(id="ddown1" text="Coding Scheme" class="m-md-2")
-      b-dropdown-item(v-for="(item, key, index) in codingSchemeList" :key="index") {{item}}
+      b-dropdown-item(v-for="(item, key, index) in codingSchemeList" v-on:click="onCodingSchemeSelect(item)" :key="index") {{item}}
+
     p Affiliation
     b-dropdown(id="ddown1" text="Affiliation" class="m-md-2")
-      b-dropdown-item(v-for="(item, key, index) in affiliationList" :key="index") {{item}}
+      b-dropdown-item(v-for="(item, key, index) in affiliationList" v-on:click="onAffilationSelect(item)" :key="index") {{item}}
+
+    p Battle Dimension
+    b-dropdown(id="ddown1" text="Battle Dimension" class="m-md-2")
+      b-dropdown-item(v-for="(item, key, index) in battleDimensionList" v-on:click="onBattleDimentionSelect(item)" :key="index") {{item}}
+
 
 </template>
 
@@ -14,6 +20,18 @@
 
   export default {
     name: "ObjectPanel",
+
+    methods:{
+      onAffilationSelect(value){
+          alert(value)
+      },
+      onCodingSchemeSelect(value){
+          alert(value)
+      },
+      onBattleDimentionSelect(value){
+          alert(value)
+      }
+    },
 
     data: () => {
       return {
@@ -23,7 +41,6 @@
           "Stability Operations",
           "Emergency Management Symbols"
         ],
-
         affiliationList: [
             "Pending",
             "Unknown",
@@ -40,6 +57,15 @@
             "Joker",
             "Faker",
             "None Specifieder",
+        ],
+        battleDimensionList: [
+            "Space",
+            "Air",
+            "Ground",
+            "Sea Surface",
+            "Sea Surface",
+            "Sea Subsurface",
+            "SOF",
         ]
       }
     }
