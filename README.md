@@ -1,7 +1,7 @@
 
-# Military situation monitor for Common operating pictures # 
+# _Military situation monitor for Common operating pictures_ # 
 
-# In the development mode 
+## In the development ##
 
 ## Stack technologies ##
   * ___VUE___ 
