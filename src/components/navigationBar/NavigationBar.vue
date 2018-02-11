@@ -12,8 +12,7 @@
       toogleSideBar(){
         this.$store.commit('toogleSidebar')
       }
-    },
-
+    }
   }
 </script>
 

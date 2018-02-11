@@ -1,12 +1,18 @@
 <template lang="pug">
   transition(name="slide")
     aside(v-show="componentVisibility")
+      ObjectPanel
 </template>
 
 <script>
 
+  import ObjectPanel from "./objects/ObjectPanel.vue"
   export default {
     name: "SideBar",
+
+    components:{
+      ObjectPanel
+    },
 
     computed: {
       componentVisibility () {

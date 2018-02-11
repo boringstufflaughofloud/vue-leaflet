@@ -12,7 +12,7 @@ export default {
 
 
     mapClickHandler(event){
-      console.log(event.latlng);
+      this.$store.commit('setMapPoint',event.latlng)
       let point = [event.latlng.lat, event.latlng.lng];
       this.setMarker(SymbolGenerator.createSymbol(), point);
 
