@@ -5,10 +5,11 @@
 
 <script>
 import MapMixin from './mixins/MapMixin'
+import MarkersMixin from './mixins/MarkersMixin'
   export default {
 
     name: "Map",
-    mixins: [MapMixin],
+    mixins: [MapMixin, MarkersMixin],
     data() {
       return {
 

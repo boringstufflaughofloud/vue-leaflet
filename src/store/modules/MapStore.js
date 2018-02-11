@@ -1,13 +1,19 @@
 
 const MapStore = {
   state: {
-    mapPoint: {lat: 48.32162640812711, lng: 36.31942749023438}
+    mapPoint: {lat: 48.32162640812711, lng: 36.31942749023438},
+    selectedItem : null
   },
   mutations: {
     setMapPoint: (state, point) => {
       console.log(point);
       state.mapPoint = point
-    }
+    },
+
+    selectItem: (state, marker) => {
+      debugger
+      state.selectedItem = marker;
+    },
   },
 
 
